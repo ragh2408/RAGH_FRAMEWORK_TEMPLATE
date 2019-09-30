@@ -1,7 +1,7 @@
 #Author: Ragh.yadav2408@gmail.com
 Feature: Title of your feature
   
-  Scenario: Checking the Templete for WEB PORTAL
+  Scenario: WEB PORTAL test
     Given Launch the browser
     And Enter th URL Google.Com
     And Enter the usename
