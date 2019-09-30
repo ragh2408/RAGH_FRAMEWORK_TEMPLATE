@@ -1,0 +1,234 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>RegressionTest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name></name>
+	<description></description>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>1.2.5</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>1.2.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.9.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.14</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.14</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.ws.commons.axiom</groupId>
+			<artifactId>axiom-api</artifactId>
+			<version>1.2.20</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.25</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20170516</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.hp.lft</groupId>
+			<artifactId>common</artifactId>
+			<version>14.3</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/com.hp.lft.common.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.hp.lft</groupId>
+			<artifactId>report</artifactId>
+			<version>14.3</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/com.hp.lft.report.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.hp.lft</groupId>
+			<artifactId>reportbuilder-standalone</artifactId>
+			<version>14.3</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/com.hp.lft.reportbuilder-standalone.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.hp.lft</groupId>
+			<artifactId>sdk-javadoc</artifactId>
+			<version>14.3</version>
+			<classifier>javadoc</classifier>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/com.hp.lft.sdk-javadoc.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.hp.lft</groupId>
+			<artifactId>sdk-standalone</artifactId>
+			<version>14.3</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/com.hp.lft.sdk-standalone.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.hp.lft</groupId>
+			<artifactId>unittesting</artifactId>
+			<version>14.3</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/com.hp.lft.unittesting.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.hp.lft</groupId>
+			<artifactId>verifications</artifactId>
+			<version>14.3</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/com.hp.lft.verifications.jar</systemPath>
+		</dependency>
+		
+	</dependencies>
+
+
+	<repositories>
+		<!--<repository> <id>Your repository's ID</id> <name>Your repository's 
+			name</name> <url>URL of the repository containing the LeanFT jar files</url> 
+			</repository> -->
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>1.10</version>
+				<executions>
+					<execution>
+						<id>add-source</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>add-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>appmodels</source>
+							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.codehaus.mojo
+										</groupId>
+										<artifactId>
+											build-helper-maven-plugin
+										</artifactId>
+										<versionRange>
+											[1.10,)
+										</versionRange>
+										<goals>
+											<goal>add-source</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<groupId>RegressionTest</groupId>
+</project>
+

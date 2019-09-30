@@ -1,0 +1,88 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: Ragh.yadav2408@gmail.com"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Checking the Templete for WEB PORTAL",
+        "description": "",
+        "id": "title-of-your-feature;checking-the-templete-for-web-portal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 435411700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch the browser",
+            "match": {
+              "location": "TC_01.launch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 308500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter th URL Google.Com",
+            "match": {
+              "location": "TC_01.enter_th_URL_Google_Com()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 586400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter the usename",
+            "match": {
+              "location": "TC_01.enter_the_usename()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5001200,
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[a]\u003e but was:\u003c[bb]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat com.optum.ndb.stepdefinitions.TC_01.enter_the_Password(TC_01.java:28)\r\n\tat ✽.And Enter the Password(WebTest.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Enter the Password",
+            "match": {
+              "location": "TC_01.enter_the_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Click on the Signon Botton",
+            "match": {
+              "location": "TC_01.click_on_the_Signon_Botton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "WebTest.feature"
+  }
+]
